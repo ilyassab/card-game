@@ -1,0 +1,176 @@
+@font-face {
+		font-family: 'OpenSans-bold';
+		src: url("fonts/OpenSans-bold.ttf") format("truetype"); 
+	}
+@font-face {
+		font-family: 'OpenSans-semibold';
+		src: url("fonts/OpenSans-semibold.ttf") format("truetype"); 
+	}
+@font-face {
+		font-family: 'Krungthep';
+		src: url("fonts/Krungthep.ttf") format("truetype"); 
+	}
+
+
+a:hover {
+	color:#FFFFFF;
+}
+
+a:link{
+	color:#FFFFFF;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited { 
+	color:#FFFFFF;
+}
+
+.fon {
+	background: #1c6e2f;
+}
+/* Pervaya stranica */
+.start {
+	background: url("pics/StartGame.png") no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:94px;
+	width: 503px;
+	height: 262px;
+}
+
+.memory {
+	opacity: 0.85;
+	width: 219px;
+	font-family: "OpenSans-bold";
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:20px;
+	font-size: 28px;
+	color: #FFFFFF;
+	letter-spacing: 0.2px;
+}
+
+.button_st {
+	margin-top:34px;
+	opacity: 0.85;
+	background: #FFFFFF;
+ 	border-radius: 4px;
+ 	width:144px;
+ 	height:42px;
+ 	margin-right: auto;
+	margin-left: auto;
+}
+
+.button_st_text {
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-right: 18px;
+	padding-bottom: 10px;
+	font-family: "OpenSans-bold";
+	font-size: 16px;
+	color: #1C7430;
+	letter-spacing: 0;
+}
+
+/* Vtoraya stranica */
+
+.success{
+	border-radius: 4px;
+ 	margin-top:30px;
+	margin-left:30px;
+	float: left;
+	width: 133px;
+	height: 185px;
+	background-image:none;
+}
+
+.hidden{
+	background-image: url(pics/oblojka.png) !important;
+}
+
+.counter{
+	margin-left:875px;
+	margin-top:-30px;
+}
+
+.counting{
+	margin-left:925px;
+	margin-top:-32px;
+}
+
+.counting_text{
+	opacity: 0.8;
+	font-family: "Krungthep";
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+.restart{
+	margin-top: 54px;
+	width: 102px;
+	height: 19px;
+}
+
+.restart_text{
+	font-family: "OpenSans-semibold";
+	opacity: 0.8;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: -0.25px;
+}
+
+.karta{
+ 	border-radius: 4px;
+ 	margin-top:30px;
+	margin-left:30px;
+	float: left;
+	width: 133px;
+	height: 185px;
+	background-size: cover;
+}
+
+.razriv{
+	width:1000px;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Tretya stranica */
+
+.finish{
+	background: url("pics/Group 2.png") no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:94px;
+	width: 503px;
+	height: 262px;
+}
+
+.memory2 {
+	opacity: 0.85;
+	width: 370px;
+	font-family: "OpenSans-bold";
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 28px;
+	color: #FFFFFF;
+	letter-spacing: 0.2px;
+	white-space: nowrap;
+}
+
+.button_fn_text{
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-right: 18px;
+	padding-bottom: 10px;
+	font-family: "OpenSans-bold";
+	font-size: 16px;
+	color: #1C7430;
+	letter-spacing: 0;
+}
+
