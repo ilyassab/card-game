@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf8">
-	<link rel="stylesheet" type="text/css" href="mycss.css">
-	<title>Карты</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+    <title>Карты</title>
 </head>
-	<body class="fon">
+<body class="background">
 <div class="razriv">
-	<div class="restart" style="margin-left:41.5px"><p class="restart_text"><a href="karti.html">Начать заново</a></p></div>
-	<div class="counter"><p class="restart_text">Очки:</p></div>
-	<div class="counting"><p id="score" class="counting_text">0</p></div>
+    <div class="restart">
+        <p class="restart_text">
+            <a href="karti.html">Начать заново</a>
+        </p>
+    </div>
+	<div class="timer">5</div>
+    <div class="counter"><p class="restart_text">Очки:</p></div>
+    <div class="counting"><p id="score" class="counting_text">0</p></div>
 </div>
 <!--perviy ryad-->
-	<div class="razriv">
-<div id="1" onclick="perevorot(this.id)" class="karta" style="margin-left:26px"></div>
-<div id="2" onclick="perevorot(this.id)" class="karta"></div>
-<div id="3" onclick="perevorot(this.id)" class="karta"></div>
-<div id="4" onclick="perevorot(this.id)" class="karta"></div>
-<div id="5" onclick="perevorot(this.id)" class="karta"></div>
-<div id="6" onclick="perevorot(this.id)" class="karta"></div>
-	</div>
+<div class="razriv">
+    <div id="1" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="2" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="3" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="4" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="5" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="6" onclick="cardClickHandler(this.id)" class="karta"></div>
+</div>
 <!--vtoroy ryad-->
-	<div class="razriv">
-<div id="7" onclick="perevorot(this.id)" class="karta" style="margin-left:26px"></div>
-<div id="8" onclick="perevorot(this.id)" class="karta"></div>
-<div id="9" onclick="perevorot(this.id)" class="karta"></div>
-<div id="10" onclick="perevorot(this.id)" class="karta"></div>
-<div id="11" onclick="perevorot(this.id)" class="karta"></div>
-<div id="12" onclick="perevorot(this.id)" class="karta"></div>
-	</div>
+<div class="razriv">
+    <div id="7" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="8" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="9" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="10" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="11" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="12" onclick="cardClickHandler(this.id)" class="karta"></div>
+</div>
 <!--tretiy ryad-->
-	<div class="razriv">
-<div id="13" onclick="perevorot(this.id)" class="karta" style="margin-left:26px"></div>
-<div id="14" onclick="perevorot(this.id)" class="karta"></div>
-<div id="15" onclick="perevorot(this.id)" class="karta"></div>
-<div id="16" onclick="perevorot(this.id)" class="karta"></div>
-<div id="17" onclick="perevorot(this.id)" class="karta"></div>
-<div id="18" onclick="perevorot(this.id)" class="karta"></div>
-	</div>
+<div class="razriv">
+    <div id="13" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="14" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="15" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="16" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="17" onclick="cardClickHandler(this.id)" class="karta"></div>
+    <div id="18" onclick="cardClickHandler(this.id)" class="karta"></div>
+</div>
 <script type="text/javascript" src="myjss.js"></script>
 </body>
 </html>
