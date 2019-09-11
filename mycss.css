@@ -13,6 +13,19 @@
     src: url("fonts/Krungthep.ttf") format("truetype");
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
 
 a:hover {
     color: #FFFFFF;
@@ -20,10 +33,6 @@ a:hover {
 
 a:link {
     color: #FFFFFF;
-}
-
-a {
-    text-decoration: none;
 }
 
 a:visited {
@@ -34,12 +43,18 @@ a:visited {
     background: #1c6e2f;
 }
 
+.no-left-margin {
+    margin-left: 0 !important;
+}
+
+.hidden {
+    background-image: url(pics/oblojka.png) !important;
+}
+
 /* Pervaya stranica */
 .start {
     background: url("pics/StartGame.png") no-repeat;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 94px;
+    margin: 94px auto 0 auto;
     width: 503px;
     height: 262px;
 }
@@ -48,9 +63,7 @@ a:visited {
     opacity: 0.85;
     width: 219px;
     font-family: "OpenSans-bold", Arial, Verdana, sans-serif;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     font-size: 28px;
     color: #FFFFFF;
     letter-spacing: 0.2px;
@@ -68,8 +81,8 @@ a:visited {
 }
 
 .button_st_text {
-	padding: 10px 18px 10px 20px;
-	font-family: "OpenSans-bold", Arial, Verdana, sans-serif;
+    padding: 10px 18px 10px 20px;
+    font-family: "OpenSans-bold", Arial, Verdana, sans-serif;
     font-size: 16px;
     color: #1C7430;
     letter-spacing: 0;
@@ -77,28 +90,14 @@ a:visited {
 
 /* Vtoraya stranica */
 
-.success {
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 30px;
-    float: left;
-    width: 133px;
-    height: 185px;
-    background-image: none;
+.container {
+    margin: 0 auto;
+    width: 978px;
 }
 
-.hidden {
-    background-image: url(pics/oblojka.png) !important;
-}
-
-.counter {
+.container_row {
     float: left;
-    margin-top: -30px;
-}
-
-.counting {
-    float: left;
-    margin-top: -32px;
+    margin: 30px auto 0 auto;
 }
 
 .counting_text {
@@ -107,18 +106,24 @@ a:visited {
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 0;
+    margin: 0;
+}
+
+.start_again {
+    margin-left: 16px;
 }
 
 .timer {
-    float: left;
+    display: inline-block;
+    width: 1px;
+    margin-left: 350px;
 }
 
-.restart {
-    float: left;
-    margin-top: 54px;
+.points {
+    margin-left: 400px;
 }
 
-.restart_text {
+.cards_text {
     font-family: "OpenSans-semibold", Arial, Verdana, sans-serif;
     opacity: 0.8;
     font-size: 14px;
@@ -126,39 +131,30 @@ a:visited {
     letter-spacing: -0.25px;
 }
 
-.karta {
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 30px;
+.cards {
     float: left;
+    margin-left: 30px;
+    border-radius: 4px;
     width: 133px;
     height: 185px;
     background-size: cover;
     cursor: pointer;
 }
 
-.razriv {
-    width: 1000px;
-    margin: 0 auto;
-}
-
 /* Tretya stranica */
 
 .finish {
     background: url("pics/Group 2.png") no-repeat;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 94px;
+    margin: 94px auto 0 auto;
     width: 503px;
     height: 262px;
 }
 
 .memory2 {
+    margin: 0 auto;
     opacity: 0.85;
     width: 370px;
     font-family: "OpenSans-bold", Arial, Verdana, sans-serif;
-    margin-right: auto;
-    margin-left: auto;
     font-size: 28px;
     color: #FFFFFF;
     letter-spacing: 0.2px;
@@ -166,10 +162,7 @@ a:visited {
 }
 
 .button_fn_text {
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-right: 18px;
-    padding-bottom: 10px;
+    padding: 10px 18px 10px 40px;
     font-family: "OpenSans-bold", Arial, Verdana, sans-serif;
     font-size: 16px;
     color: #1C7430;

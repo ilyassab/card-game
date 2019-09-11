@@ -37,6 +37,8 @@ function App() {
 		if (time === 0) {
 			clearInterval(timerInterval);
 			document.querySelector('.timer').innerHTML = 'Start!';
+			document.querySelector('.timer').style.marginLeft = 335+'px';
+			document.querySelector('.points').style.marginLeft = 415+'px';
 			hide();
 		}
 	}, 1000);
