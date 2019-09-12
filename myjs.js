@@ -7,7 +7,7 @@ const cards = {
 const pair = 9;
 let score = 0;
 let openPair = 0;
-let counter = 0;
+let clickCounter = 0;
 let firstId = 0;
 let secondId = 0;
 let isGameStarted = false;
@@ -78,19 +78,19 @@ function cardClickHandler(id) {
         return;
     }
 
-    if (counter === 0) {
+    if (clickCounter === 0) {
         firstId = id;
     }
 
-    if (counter === 1) {
+    if (clickCounter === 1) {
         secondId = id;
     }
 
-    counter++;
+    clickCounter++;
 
     card.classList.remove("hidden");
 
-    if (counter > 2) {
+    if (clickCounter > 2) {
         let firstCard = document.getElementById(firstId);
         let secondCard = document.getElementById(secondId);
         if (firstCard.style.backgroundImage === secondCard.style.backgroundImage && firstId !== secondId) {
@@ -106,7 +106,7 @@ function cardClickHandler(id) {
             score -= 42 * openPair;
         }
         realTimeScore.innerHTML = score;
-        counter = 1;
+        clickCounter = 1;
         firstId = id;
         secondId = 0;
     }
