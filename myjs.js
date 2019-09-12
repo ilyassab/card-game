@@ -12,27 +12,6 @@ let firstId = 0;
 let secondId = 0;
 let isGameStarted = false;
 
-//функция проверки наличия такой карты в массиве cards
-function isCardHaveBeenAdded(cardId, cardsArrayLength) {
-    if (cardId === -1) {
-        return true;
-    }
-    for (let i = 0; i <= cardsArrayLength; i++) {
-        if (cards.ids[i] === cardId) {
-            return true;
-        }
-    }
-    return false;
-}
-
-//через 5 секунд карты переворачиваются рубашкой вверх
-function hide() {
-    for (let i = 1; i <= 18; i++) {
-        document.getElementById(`${i}`).classList.add("hidden");
-    }
-    isGameStarted = true;
-}
-
 function App() {
     //заполнение массива cards
     for (let i = 0; i < 9; i++) {
@@ -64,7 +43,27 @@ function App() {
             hide();
         }
     }, 1000);
+}
 
+//функция проверки наличия такой карты в массиве cards
+function isCardHaveBeenAdded(cardId, cardsArrayLength) {
+    if (cardId === -1) {
+        return true;
+    }
+    for (let i = 0; i <= cardsArrayLength; i++) {
+        if (cards.ids[i] === cardId) {
+            return true;
+        }
+    }
+    return false;
+}
+
+//через 5 секунд карты переворачиваются рубашкой вверх
+function hide() {
+    for (let i = 1; i <= 18; i++) {
+        document.getElementById(`${i}`).classList.add("hidden");
+    }
+    isGameStarted = true;
 }
 
 App();
